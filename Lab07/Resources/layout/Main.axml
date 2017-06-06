@@ -13,7 +13,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/EmailText"
-        android:text="jzuluaga55@gmail.com"
+        android:text=""
         android:inputType="textEmailAddress" />
     <TextView
         android:text="Contraseña:"
@@ -25,7 +25,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/PasswordText"
-        android:text="Roger1974"
+        android:text=""
         android:inputType="textPassword" />
     <Button
         android:text="Validar"
