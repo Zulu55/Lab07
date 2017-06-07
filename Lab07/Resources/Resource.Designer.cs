@@ -63,6 +63,9 @@ namespace Lab07
 			// aapt resource value: 0x7f050001
 			public const int EmailText = 2131034113;
 			
+			// aapt resource value: 0x7f050005
+			public const int MessageText = 2131034117;
+			
 			// aapt resource value: 0x7f050003
 			public const int PasswordText = 2131034115;
 			

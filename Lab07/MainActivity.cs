@@ -11,6 +11,7 @@ namespace Lab07
         EditText EmailText;
         EditText PasswordText;
         Button ValidateButton;
+        TextView MessageText;
 
         protected override void OnCreate(Bundle bundle)
         {
@@ -22,6 +23,7 @@ namespace Lab07
             EmailText = FindViewById<EditText>(Resource.Id.EmailText);
             PasswordText = FindViewById<EditText>(Resource.Id.PasswordText);
             ValidateButton = FindViewById<Button>(Resource.Id.ValidateButton);
+            MessageText = FindViewById<TextView>(Resource.Id.MessageText);
 
             ValidateButton.Click += ValidateButton_Click;
         }
@@ -47,13 +49,14 @@ namespace Lab07
             }
             else
             {
-                var builder = new AlertDialog.Builder(this);
-                var alert = builder.Create();
-                alert.SetTitle("Resultado de la verificación");
-                alert.SetIcon(Resource.Drawable.Icon);
-                alert.SetMessage($"{result.Status}\n{result.Fullname}\n{result.Token}");
-                alert.SetButton("Ok", (s, ev) => { });
-                alert.Show();
+                //var builder = new AlertDialog.Builder(this);
+                //var alert = builder.Create();
+                //alert.SetTitle("Resultado de la verificación");
+                //alert.SetIcon(Resource.Drawable.Icon);
+                //alert.SetMessage($"{result.Status}\n{result.Fullname}\n{result.Token}");
+                //alert.SetButton("Ok", (s, ev) => { });
+                //alert.Show();
+                MessageText.Text = $"{result.Status}\n{result.Fullname}\n{result.Token}";
             }
         }
     }
